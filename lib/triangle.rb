@@ -1,11 +1,8 @@
 class Triangle
   # write code here
-  attr_accessor :side_1, :side_2, :side_3
+  attr_accessor :x, :y, :z
 
-  def initialize(side_1, side_2, side_3)
-    @side_1 = side_1
-    @side_2 = side_2
-    @side_3 = side_3
-  end
-
-end
+  def initialize(x, y, z)
+    @x = x
+    @y = y
+    @z = z
