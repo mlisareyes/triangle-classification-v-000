@@ -8,6 +8,7 @@ class Triangle
   end
 
   def kind
+    valid_triangle
     if side_1 == side_2 && side_2 == side_3
       :equilateral
     elsif
@@ -16,5 +17,8 @@ class Triangle
     else
       :scalene
     end
+  end
+
+  def valid_triangle
   end
 end
