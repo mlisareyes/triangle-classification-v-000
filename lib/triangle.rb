@@ -20,6 +20,7 @@ class Triangle
   end
 
   def valid_triangle
-    valid = [(side_1 + side_2 > side_3), (side_1 + side_3 > side_2), (side_2 + side_3 > side_1)]
+    valid_triangle = [(side_1 + side_2 > side_3), (side_1 + side_3 > side_2), (side_2 + side_3 > side_1)]
+    [side_1, side_2, side_3].each {|s| valid_triangle << false if s <=0}
   end
 end
